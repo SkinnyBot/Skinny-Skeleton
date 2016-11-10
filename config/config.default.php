@@ -48,7 +48,6 @@ return [
 /**
  * Configure basic information about the bot.
  *
- * - token : The toekn used to connect to the discord server.
  * - admins : The list of bot's administrators. (IDs only)
  * - chatChannels : Restrict the bot to only listen to certain text channels. (IDs only)
  * - voiceChannel : Join a voice channel on startup. (IDs only)
