@@ -18,4 +18,4 @@ Command line only : `php run.php`
 
 
 # Contribute
-[Follow this guide to contribute](https://github.com/Xety/Skinny/blob/master/CONTRIBUTING.md)
+[Follow this guide to contribute](https://github.com/Xety/Skinny/blob/master/.github/CONTRIBUTING.md)

@@ -61,12 +61,14 @@ class Module implements ModuleInterface
                 switch ($module) {
                     //AlreadyLoaded
                     case 'AL':
-                        $wrapper->Channel->sendMessage('The Module `' . $message['arguments'][1] . '` is already loaded.');
+                        $wrapper->Channel->sendMessage('The Module `' . $message['arguments'][1] .
+                            '` is already loaded.');
                         break;
 
                     //Loaded
                     case 'L':
-                        $wrapper->Channel->sendMessage('Module `' . $message['arguments'][1] . '` loaded successfully.');
+                        $wrapper->Channel->sendMessage('Module `' . $message['arguments'][1] .
+                            '` loaded successfully.');
                         break;
 
                     //NotFound
@@ -88,7 +90,8 @@ class Module implements ModuleInterface
 
                 //AlreadyUnloaded
                 if ($module === 'AU') {
-                    $wrapper->Channel->sendMessage('The Module `' . $message['arguments'][1] . '` is already unloaded or doesn\'t exist.');
+                    $wrapper->Channel->sendMessage('The Module `' . $message['arguments'][1] .
+                        '` is already unloaded or doesn\'t exist.');
                 } else {
                     $wrapper->Channel->sendMessage('Module `' . $message['arguments'][1] . '` unloaded successfully.');
                 }
@@ -108,7 +111,7 @@ class Module implements ModuleInterface
 
                     //For each Modules, we reload it.
                     foreach ($loadedModules as $module) {
-                        $this->_reloadModule($wrapper, $module);
+                        $this->reloadModule($wrapper, $module);
 
                         //To avoid spam.
                         usleep(500000);
@@ -118,7 +121,7 @@ class Module implements ModuleInterface
                 }
 
                 //Else there is just one Module to reload.
-                $this->_reloadModule($wrapper, $message['arguments'][1]);
+                $this->reloadModule($wrapper, $message['arguments'][1]);
                 break;
 
             case 'time':
@@ -136,7 +139,8 @@ class Module implements ModuleInterface
                 $start = new DateTime("@0");
                 $end = new DateTime("@$seconds");
 
-                $wrapper->Channel->sendMessage('The Module `' . Inflector::camelize($message['arguments'][1]) . '` is loaded since ' . $start->diff($end)->format('%a days, %h hours, %i minutes and %s seconds.'));
+                $wrapper->Channel->sendMessage('The Module `' . Inflector::camelize($message['arguments'][1]) .
+                    '` is loaded since ' . $start->diff($end)->format('%a days, %h hours, %i minutes and %s seconds.'));
                 break;
 
             case 'loaded':
@@ -160,7 +164,7 @@ class Module implements ModuleInterface
      *
      * @return void
      */
-    protected function _reloadModule(Wrapper $wrapper, $module)
+    protected function reloadModule(Wrapper $wrapper, $module)
     {
         $moduleStatus = $wrapper->ModuleManager->reload($module);
 

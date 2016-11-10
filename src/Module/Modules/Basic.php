@@ -51,7 +51,9 @@ class Basic implements ModuleInterface
                 break;
 
             case 'info':
-                $wrapper->Message->reply('I\'m open-source! You can find me on GitHub : https://github.com/Xety/Skinny .');
+                $wrapper->Message->reply(
+                    'I\'m open-source! You can find me on GitHub : https://github.com/Xety/Skinny .'
+                );
 
                 break;
 
@@ -64,7 +66,10 @@ class Basic implements ModuleInterface
                 $seconds = floor(microtime(true) - TIME_START);
                 $start = new DateTime("@0");
                 $end = new DateTime("@$seconds");
-                $wrapper->Message->reply('I\'m running since ' . $start->diff($end)->format('%a days, %h hours, %i minutes and %s seconds.'));
+                $wrapper->Message->reply(
+                    'I\'m running since ' .
+                    $start->diff($end)->format('%a days, %h hours, %i minutes and %s seconds.')
+                );
 
                 break;
         }
