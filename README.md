@@ -4,7 +4,9 @@
 |:------:|:-------:|:-------:|:------:|:------:|
 |[![Build Status](https://img.shields.io/travis/Xety/Skinny-Skeleton.svg?style=flat-square)](https://travis-ci.org/Xety/Skinny-Skeleton)|[![Scrutinizer](https://img.shields.io/scrutinizer/g/Xety/Skinny-Skeleton.svg?style=flat-square)](https://scrutinizer-ci.com/g/Xety/Skinny-Skeleton)|[![Latest Stable Version](https://img.shields.io/packagist/v/Xety/Skinny-Skeleton.svg?style=flat-square)](https://packagist.org/packages/xety/skinny-skeleton)|[![Total Downloads](https://img.shields.io/packagist/dt/xety/skinny-skeleton.svg?style=flat-square)](https://packagist.org/packages/xety/skinny-skeleton)|[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://packagist.org/packages/xety/skinny-skeleton)
 
-The skeleton used for [Skinny](https://github.com/Xety/Skinny)
+The bot skeleton used for [Skinny](https://github.com/Xety/Skinny).
+
+The source code of the bot core can be found here: [Xety/Skinny](https://github.com/Xety/Skinny).
 
 # Installation
  * `composer create-project --prefer-dist xety/skinny-skeleton <application_name>`
