@@ -108,7 +108,7 @@ class Module implements ModuleInterface
 
                     //For each Modules, we reload it.
                     foreach ($loadedModules as $module) {
-                        $this->_reloadModule($server, $module);
+                        $this->_reloadModule($wrapper, $module);
 
                         //To avoid spam.
                         usleep(500000);
