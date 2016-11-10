@@ -21,6 +21,31 @@ return [
     ],
 
 /**
+ * Configure the Discord class.
+ *
+ * More informations can be found there :
+ * https://discordphp.readme.io/docs/options
+ *
+ * - token - The Discord authentication token.
+ * - shardID - The ID of the shard (if you are using sharding).
+ * - shardCount - How many shards you are using (if you are using sharding).
+ * - loop - The ReactPHP event loop.
+ * - logger - The Monolog logger to use.
+ * - loggerLevel - The logger level to use.
+ * - logging - Whether logging is enabled.
+ * - cachePool - The cache pool to use.
+ * - loadAllMembers - Whether all members should be preloaded.
+ * - disabledEvents - An array of events that will be ignored.
+ * - pmChannels - Whether private message channels should be parsed and stored.
+ * - storeMessages - Whether messages received should be stored.
+ */
+    'Discord' => [
+        'token' => 'insert-your-token-here',
+        'logging' => true,
+        'pmChannels' => true,
+    ],
+
+/**
  * Configure basic information about the bot.
  *
  * - token : The toekn used to connect to the discord server.
@@ -29,7 +54,6 @@ return [
  * - voiceChannel : Join a voice channel on startup. (IDs only)
  */
     'Bot' => [
-        'token' => '',
         'admins' => [],
         'chatChannels' => [],
         'voiceChannel' => ''
