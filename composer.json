@@ -18,7 +18,8 @@
     ],
     "require": {
         "php": ">=5.6",
-        "skinnybot/skinny": "dev-master"
+        "skinnybot/skinny": "dev-master",
+        "skinnybot/plugin-installer": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "*",
