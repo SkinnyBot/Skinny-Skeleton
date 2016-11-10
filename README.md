@@ -1,2 +1,2 @@
-# DiscordPHP-Bot-Skeleton
-The skeleton used for [DiscordPHP-Bot](https://github.com/Xety/DiscordPHP-Bot)
+# Skinny Skeleton
+The skeleton used for [Skinny](https://github.com/Xety/Skinny)
