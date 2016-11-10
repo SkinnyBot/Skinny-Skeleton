@@ -49,7 +49,7 @@ return [
  *
  * - prefix - Prefix used with command.
  */
-    'Commands' => [
+    'Command' => [
         'prefix' => '!'
     ]
 ];
