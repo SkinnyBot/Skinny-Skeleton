@@ -6,6 +6,14 @@
 
 The skeleton used for [Skinny](https://github.com/Xety/Skinny)
 
+# Installation
+ * `composer create-project --prefer-dist xety/skinny-skeleton <application_name>`
+ * Rename the file `config/config.default.php` to `config/config.php`
+ * Configure your bot in the file `config/config.php`
+
+# Run
+Command line only : `php run.php`
+
 
 # Contribute
 [Follow this guide to contribute](https://github.com/Xety/Skinny/blob/master/CONTRIBUTING.md)
