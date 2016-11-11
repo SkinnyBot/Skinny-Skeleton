@@ -2,7 +2,7 @@
 namespace Bot\Module\Modules;
 
 use DateTime;
-use Skinny\Configure\Configure;
+use Skinny\Core\Configure;
 use Skinny\Module\ModuleInterface;
 use Skinny\Network\Wrapper;
 use Skinny\utility\Inflector;

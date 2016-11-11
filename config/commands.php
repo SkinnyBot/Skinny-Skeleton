@@ -9,24 +9,6 @@
  */
 return [
     'Commands' => [
-        //Basic Module.
-        'say' => [
-            'params' => 1,
-            'syntax' => 'Say [Message]'
-        ],
-        'info' => [
-            'params' => 0,
-            'syntax' => 'Info'
-        ],
-        'version' => [
-            'params' => 0,
-            'syntax' => 'Version'
-        ],
-        'time' => [
-            'params' => 0,
-            'syntax' => 'Time'
-        ],
-
         //Module Module.
         'module' => [
             'params' => 1,

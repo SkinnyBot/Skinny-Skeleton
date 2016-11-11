@@ -1,7 +1,7 @@
 <?php
 namespace Bot\Module\Modules;
 
-use Skinny\Configure\Configure;
+use Skinny\Core\Configure;
 use Skinny\Module\ModuleInterface;
 use Skinny\Network\Wrapper;
 use Skinny\Utility\Command;
