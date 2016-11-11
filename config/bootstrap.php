@@ -10,6 +10,8 @@ require __DIR__ . DIRECTORY_SEPARATOR . 'paths.php';
 require ROOT . DS . 'vendor' . DS . 'autoload.php';
 
 use Skinny\Configure\Configure;
+use Skinny\Core\Configure\Engine\PhpConfig;
+use Skinny\Core\Plugin;
 
 /**
  * Read configuration file and inject configuration into various
@@ -20,11 +22,18 @@ use Skinny\Configure\Configure;
  * that changes from configuration that does not. This makes deployment simpler.
  */
 try {
+    Configure::config('default', new PhpConfig());
     Configure::load('config');
     Configure::load('commands');
 } catch (\Exception $e) {
     die($e->getMessage() . "\n");
 }
+
+/**
+ * Load all the plugins. Or just one by one.
+ */
+//Plugin::loadAll();
+//Plugin::load('Basic', ['commands' => true]);
 
 /**
  * Set server timezone to UTC. You can change it to another timezone of your
