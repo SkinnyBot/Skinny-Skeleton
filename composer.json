@@ -35,5 +35,8 @@
             "Test\\": "tests"
         }
     },
+    "scripts": {
+        "post-autoload-dump": "Skinny\\Composer\\Installer\\PluginInstaller::postAutoloadDump"
+    },
     "minimum-stability": "stable"
 }
