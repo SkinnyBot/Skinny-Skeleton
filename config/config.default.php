@@ -18,6 +18,9 @@ return [
  */
     'App' => [
         'namespace' => 'Bot',
+        'paths' => [
+            'plugins' => [ROOT . DS . 'plugins' . DS]
+        ]
     ],
 
 /**
