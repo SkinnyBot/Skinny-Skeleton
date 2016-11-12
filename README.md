@@ -11,10 +11,30 @@ The source code of the bot core can be found here: [SkinnyBot/Skinny](https://gi
 # Installation
  * `composer create-project --prefer-dist skinnybot/skinny-skeleton <application_name>`
  * Rename the file `config/config.default.php` to `config/config.php`
- * Configure your bot in the file `config/config.php`
+ * Configure your bot token in the file `config/config.php`
 
 # Run
 Command line only : `php run.php`
+
+## Running the bot permanently on a Server
+I recommend to use the popular `Unitech/pm2` npm package to run your bot. You will need `NodeJS` and `npm` installed on your server.
+```
+# Using Ubuntu
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Using Debian, as root
+curl -sL https://deb.nodesource.com/setup_7.x | bash -
+apt-get install -y nodejs
+
+
+# Then
+sudo npm install pm2@latest -g
+pm2 start run.php -n "skinny"
+```
+More informations on the `pm2` package can be found on the [Unitech/PM2](https://github.com/Unitech/pm2) repository.
+
+For more informations about installing NodeJS can be found [here](https://github.com/nodesource/distributions).
 
 
 # Contribute
