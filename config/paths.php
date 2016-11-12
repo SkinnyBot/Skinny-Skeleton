@@ -46,6 +46,6 @@ define('MODULE_DIR', APP . 'Module' . DS . 'Modules');
 define('TMP_MODULE_DIR', TMP . 'Modules');
 
 /**
- * The absolute path to the "cake" directory, WITHOUT a trailing DS.
+ * The absolute path to the "skinny" directory, WITHOUT a trailing DS.
  */
 define('SKINNY_PATH', ROOT . DS . 'vendor' . DS . 'skinnybot' . DS . 'skinny'. DS);
