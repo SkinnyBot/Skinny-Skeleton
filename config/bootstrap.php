@@ -16,10 +16,6 @@ use Skinny\Core\Plugin;
 /**
  * Read configuration file and inject configuration into various
  * Skinny classes.
- *
- * By default there is only one configuration file. It is often a good
- * idea to create multiple configuration files, and separate the configuration
- * that changes from configuration that does not. This makes deployment simpler.
  */
 try {
     Configure::config('default', new PhpConfig());
@@ -28,16 +24,6 @@ try {
 } catch (\Exception $e) {
     die($e->getMessage() . "\n");
 }
-
-/**
- * Plugins need to be loaded manually, you can either load them one by one or all of them in a single call
- * Uncomment one of the lines below, as you need.
- *
- * Plugin::loadAll(); // Loads all plugins at once
- * Plugin::load('Basic', ['bootstrap' => true]); //Loads a single plugin named Basic with the bootstrap file.
- *
- */
-
 
 /**
  * Set server timezone to UTC. You can change it to another timezone of your
@@ -50,8 +36,17 @@ date_default_timezone_set('UTC');
  */
 set_time_limit(0);
 
-
 /**
  * Set the memory unlimited.
  */
-ini_set('memory_limit', '-1');
+ini_set('memory_limit', '200M');
+
+/**
+ * Plugins need to be loaded manually, you can either load them one by one or all of them in a single call
+ * Uncomment one of the lines below, as you need.
+ *
+ * Plugin::loadAll(); // Loads all plugins at once
+ * Plugin::load('Basic', ['bootstrap' => true]); //Loads a single plugin named Basic with the bootstrap file.
+ *
+ */
+Plugin::load('Basic', ['bootstrap' => true]);
