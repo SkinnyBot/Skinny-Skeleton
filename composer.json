@@ -1,6 +1,6 @@
 {
     "name": "skinnybot/skinny-skeleton",
-    "description": "A simple discord bot in PHP.",
+    "description": "A framework to create discord bot in PHP.",
     "homepage": "https://github.com/SkinnyBot/Skinny-Skeleton",
     "keywords": ["discord", "bot", "php", "discordphp", "botphp", "skinny"],
     "type": "project",

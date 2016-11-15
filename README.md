@@ -20,6 +20,9 @@ The source code of the bot core can be found here: [SkinnyBot/Skinny](https://gi
 # Run
 Command line only : `php run.php`
 
+# Note
+The skeleton will install by default the [Module Plugin](https://github.com/SkinnyBot/Module) and the [Basic Plugin](https://github.com/SkinnyBot/Basic) automatically.
+
 ## Running the bot permanently on a Server
 I recommend to use the popular `Unitech/pm2` npm package to run your bot. You will need `NodeJS` and `npm` installed on your server.
 ```
