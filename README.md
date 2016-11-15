@@ -8,6 +8,10 @@ The bot skeleton used for [Skinny](https://github.com/SkinnyBot/Skinny).
 
 The source code of the bot core can be found here: [SkinnyBot/Skinny](https://github.com/SkinnyBot/Skinny).
 
+# Requirements
+* :package: [Composer](https://getcomposer.org)
+* ![PHP](https://img.shields.io/badge/PHP->=5.6-44CB12.svg?style=flat-square)
+
 # Installation
  * `composer create-project --prefer-dist skinnybot/skinny-skeleton <application_name>`
  * Rename the file `config/config.default.php` to `config/config.php`
@@ -34,7 +38,7 @@ pm2 start run.php -n "skinny"
 ```
 More informations on the `pm2` package can be found on the [Unitech/PM2](https://github.com/Unitech/pm2) repository.
 
-For more informations about installing NodeJS can be found [here](https://github.com/nodesource/distributions).
+More informations about installing NodeJS can be found [here](https://github.com/nodesource/distributions).
 
 
 # Contribute
