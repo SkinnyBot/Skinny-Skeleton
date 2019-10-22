@@ -16,15 +16,6 @@
             "homepage": "https://github.com/Xety"
         }
     ],
-    "repositories": [
-        {
-            "type": "path",
-            "url": "Z:\\Web\\Division\\SkinnyBot",
-            "options": {
-                "symlink": false
-            }
-        }
-    ],
     "require": {
         "php": ">=7.3",
         "skinnybot/skinny": "~2.0",
