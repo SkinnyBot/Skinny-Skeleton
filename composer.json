@@ -17,15 +17,15 @@
         }
     ],
     "require": {
-        "php": ">=5.6",
-        "skinnybot/skinny": "~1.0",
-        "skinnybot/plugin-installer": "~1.0",
-        "skinnybot/basic": "~1.0",
-        "skinnybot/module": "~1.0"
+        "php": ">=7.3",
+        "skinnybot/skinny": "dev-master",
+        "skinnybot/plugin-installer": "dev-master",
+        "skinnybot/basic": "dev-master",
+        "skinnybot/module": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "*",
-        "squizlabs/php_codesniffer": "3.0.x-dev"
+        "squizlabs/php_codesniffer": "*"
     },
     "autoload": {
         "psr-4": {
@@ -40,5 +40,5 @@
     "scripts": {
         "post-autoload-dump": "Skinny\\Composer\\Installer\\PluginInstaller::postAutoloadDump"
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
