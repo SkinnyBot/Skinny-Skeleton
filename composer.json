@@ -28,7 +28,6 @@
     "require": {
         "php": ">=7.3",
         "skinnybot/skinny": "dev-master",
-        "skinnybot/plugin-installer": "dev-master",
         "skinnybot/module": "dev-master",
         "skinnybot/basic": "dev-master"
     },
