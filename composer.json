@@ -27,9 +27,9 @@
     ],
     "require": {
         "php": ">=7.3",
-        "skinnybot/skinny": "dev-master",
-        "skinnybot/module": "dev-master",
-        "skinnybot/basic": "dev-master"
+        "skinnybot/skinny": "~2.0",
+        "skinnybot/module": "~2.0",
+        "skinnybot/basic": "~2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~8.0",
@@ -47,5 +47,6 @@
     },
     "scripts": {
         "post-autoload-dump": "Skinny\\Composer\\Installer\\PluginInstaller::postAutoloadDump"
-    }
+    },
+    "minimum-stability": "stable"
 }
