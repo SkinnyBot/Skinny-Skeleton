@@ -49,4 +49,4 @@ ini_set('memory_limit', '200M');
  * Plugin::load('Basic', ['bootstrap' => true]); //Loads a single plugin named Basic with the bootstrap file.
  *
  */
-Plugin::load(['Basic', 'Module', 'Developer'], ['bootstrap' => true]);
+Plugin::load(['Basic', 'Module', 'Developer', 'Member'], ['bootstrap' => true]);
